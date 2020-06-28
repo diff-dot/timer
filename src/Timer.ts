@@ -26,7 +26,7 @@ export class Timer {
     const time = new Date().getTime() - this.startedAt;
 
     if (desc) {
-      console.debug(`${this.name ? this.name + ':' : ''}${desc}\t${time}ms`);
+      console.info(`${this.name ? this.name + ':' : ''}${desc}\t${time}ms`);
       return;
     } else {
       return time;
@@ -40,7 +40,7 @@ export class Timer {
     this.start();
 
     if (desc) {
-      console.debug(`${this.name ? this.name + ':' : ''}${desc}\t${time}ms`);
+      console.info(`${this.name ? this.name + ':' : ''}${desc}\t${time}ms`);
       return;
     } else {
       return time;
